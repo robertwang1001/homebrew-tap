@@ -5,21 +5,21 @@
 class Proyecto < Formula
   desc "Proyecto is a lightweight CLI tool for managing local projects"
   homepage "https://github.com/robertwang1001/proyecto"
-  version "2.5.6"
+  version "2.5.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.6/proyecto_2.5.6_darwin_amd64.tar.gz"
-      sha256 "c2c2d8d4b12af9a2cf0ea06623c9ae1fabb646f967963efe1556b24d12e25112"
+      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.7/proyecto_2.5.7_darwin_amd64.tar.gz"
+      sha256 "012f75b54abadda26b51f0ab929c986906b55dc8cce804840816210d78a48d20"
 
       define_method(:install) do
         bin.install "proyecto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.6/proyecto_2.5.6_darwin_arm64.tar.gz"
-      sha256 "b7b99c7ea8d82880b6a14b3cf0a486ee8461f6628562aab51e93925518ff94da"
+      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.7/proyecto_2.5.7_darwin_arm64.tar.gz"
+      sha256 "e8b631e621ef7b580c45dfa7a200aa09c2027107d9a06c5873f598ca7f856494"
 
       define_method(:install) do
         bin.install "proyecto"
@@ -29,15 +29,15 @@ class Proyecto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.6/proyecto_2.5.6_linux_amd64.tar.gz"
-      sha256 "56bb56f775a141604dae8fde97ed75ce44d4ce0bbff88e488228a17dc64ae281"
+      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.7/proyecto_2.5.7_linux_amd64.tar.gz"
+      sha256 "4fbaaa46150154784c548766ff465189352bfd0e36aa2b90505ce4e82c7e7027"
       define_method(:install) do
         bin.install "proyecto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.6/proyecto_2.5.6_linux_arm64.tar.gz"
-      sha256 "894f4b1513381a1879a2eab931b048eae8f1430da92bd74d6dcef310a66c5823"
+      url "https://github.com/robertwang1001/proyecto/releases/download/v2.5.7/proyecto_2.5.7_linux_arm64.tar.gz"
+      sha256 "042ff86cd3e7df8b58e3b0c3dcf5bbe4223cbaecf5ede4e4e3af4c96a830c0b4"
       define_method(:install) do
         bin.install "proyecto"
       end
